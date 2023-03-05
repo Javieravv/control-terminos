@@ -19,7 +19,7 @@ arrayDias.forEach(item => {
  */
 export const TerminosJudiciales = () => {
     const [dataTerminos, setDataTerminos] = useState ({
-        fechainicio: dayjs().format('MM/DD/YYYY'),
+        fechainicio: dayjs().format('YYYY/MM/DD'),
         numerodias: 3,
         tipodia: '0',  // 1 = hábil 2 = calendario
         tipotermino: '1', // 1 = días, 2 = meses, 3 = años

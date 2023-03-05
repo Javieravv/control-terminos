@@ -91,7 +91,16 @@ header {
             border-radius: 5px;
             border: 1px green solid;
             padding: 1px 3px;
-        }        
+            font-size: 1rem;
+            padding: 1px 10px;
+            // width: 100%;
+        }
+
+        input[type="date"] {
+            background-color: pink;
+            width: inherit;
+        }
+
 
         .clase-terminos {
             flex-basis: 450px;
@@ -161,7 +170,6 @@ header {
     
     @media screen and (max-width: $extra-small) {
         padding: 0px 10px;
-        background-color: maroon;
         div {
             width: 100%;
         }
