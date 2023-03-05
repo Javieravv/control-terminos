@@ -139,8 +139,15 @@ header {
 
     @media screen and (max-width: $extra-small) {
         width: 100%;
-        padding: 0px 5px;
+        padding: 0px 10px;
+        
+        .div-fechafinal {
+            p {
+                font-size: 1rem;
+            }
+        }
     }
+
 
 }
 
