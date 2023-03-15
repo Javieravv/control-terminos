@@ -17,8 +17,6 @@ const VerFechaInhabil = ( { ano } ) => {
 
     const handleFechasNoHabiles = () => {
         setVerFechasNoHabiles (!verFechasNoHabiles)
-        // console.log ('EL ÍNDICE DEL ARREGLO ES: ', arrayYears.indexOf(ano))
-        // console.log ('FECHAS DEL AÑO: ', Object.values(diasFestivos[ano]))
         
         if ( arrayDiasNoHabiles.length === 0) {
             setArrayDiasNoHabiles (Object.values(diasFestivos[ano]))
@@ -27,13 +25,13 @@ const VerFechaInhabil = ( { ano } ) => {
 
     return (
         <div className='div-fechanohabil'>
-            <h2>
+            <h2 onClick={ handleFechasNoHabiles } >
                 Año {ano}
             </h2> 
             <p 
                 className={!verFechasNoHabiles ? `menu` : `menu-rotate`}
                 onClick={ handleFechasNoHabiles }
-            ><i class="ti ti-chevron-down"></i></p>
+            ><i className="ti ti-chevron-down"></i></p>
             {
                 (verFechasNoHabiles)
                 ? (
